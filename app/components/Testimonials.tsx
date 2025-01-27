@@ -1,7 +1,7 @@
 const Testimonials = () => {
 	const testimonials = [
 	  {
-		quote: 'This tool has completely transformed how I manage my finances. It’s intuitive and easy to use!',
+		quote: 'This tool has completely transformed how I manage my finances. It&rsquo;s intuitive and easy to use!',
 		author: 'Jane Doe',
 	  },
 	  {
@@ -24,7 +24,10 @@ const Testimonials = () => {
 				key={index}
 				className="bg-white shadow-lg rounded-lg p-6 text-center"
 			  >
-				<p className="text-gray-600 italic">"{testimonial.quote}"</p>
+				{/* Escaped quotes using &ldquo; and &rdquo; */}
+				<p className="text-gray-600 italic">
+				  &ldquo;{testimonial.quote}&rdquo;
+				</p>
 				<h4 className="text-gray-800 font-bold mt-4">- {testimonial.author}</h4>
 			  </div>
 			))}
