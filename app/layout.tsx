@@ -1,5 +1,5 @@
-import { ReactNode } from "react";
 import SEO from "./components/SEO"; // Adjust path as needed
+import NavBar from "./components/NavBar"; // Adjust path as needed
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 
@@ -29,6 +29,8 @@ export default function RootLayout({
           keywords="finance, budgeting, expenses, savings"
           author="Your Name"
         />
+						<NavBar/>
+
 				<main>{children}</main>
 				<footer className="py-6 bg-gray-800 text-white text-center">
 					<p>&copy; 2025 Personal Finance App. All rights reserved.</p>

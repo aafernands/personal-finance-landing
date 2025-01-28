@@ -15,7 +15,7 @@ const Testimonials = () => {
 	];
   
 	return (
-	  <section className="py-20 bg-gray-100">
+	  <section id="testimonials" className="py-20 bg-gray-100">
 		<div className="max-w-5xl mx-auto px-6">
 		  <h2 className="text-3xl font-bold text-center text-gray-800">What Our Users Say</h2>
 		  <div className="mt-10 grid gap-10 md:grid-cols-2 lg:grid-cols-3">
